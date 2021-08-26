@@ -10,7 +10,7 @@ const { API_URL, PRIVATE_KEY } = process.env;
  */
 
 module.exports = {
-  solidity: '0.8.5',
+  solidity: '0.8.4',
   defaultNetwork: 'ropsten',
   networks: {
     hardhat: {},
