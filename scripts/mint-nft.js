@@ -21,7 +21,7 @@ async function mintNFT(tokenURI) {
     to: contractAddress,
     nonce: nonce,
     gas: 500000,
-    maxPriorityFeePerGas: 1999999987,
+    //maxPriorityFeePerGas: 1999999987,
     data: nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI(),
   };
 
@@ -45,4 +45,31 @@ async function mintNFT(tokenURI) {
     });
 }
 
-mintNFT('https://gateway.pinata.cloud/ipfs/QmPFQC2NdxAjbNrESNRLnzZGE2sWyuUebehwj1z4bUVvMh');
+mintNFT('https://gateway.pinata.cloud/ipfs/QmfMRiCVue2vXAYa63E8HLVWhg8kugsGvk3qqfyE29mFkS');
+//mintNFT('https://gateway.pinata.cloud/ipfs/QmPFQC2NdxAjbNrESNRLnzZGE2sWyuUebehwj1z4bUVvMh');
+
+//mintNFT('https://gateway.pinata.cloud/ipfs/QmbfqqNv9W8PSbmaRgYHJxPM8ymAnt5MjxFijMq6tW92Bj');
+// Contract deployed to address: 0x2098C6cD90d2Bb10F9B74ABC74cA57656131bA87
+// The hash of your transaction is:  0xbae4bacbd115b9a5dc509f098dfcec84f28f52a3c0e4b932281c6a01d1bbf37e
+
+/*
+This is the “ERC721 Metadata JSON Schema” referenced above.
+{
+    "title": "Asset Metadata",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Identifies the asset to which this NFT represents"
+        },
+        "description": {
+            "type": "string",
+            "description": "Describes the asset to which this NFT represents"
+        },
+        "image": {
+            "type": "string",
+            "description": "A URI pointing to a resource with mime type image/* representing the asset to which this NFT represents. Consider making any images at a width between 320 and 1080 pixels and aspect ratio between 1.91:1 and 4:5 inclusive."
+        }
+    }
+}
+*/
